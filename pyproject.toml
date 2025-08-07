@@ -1,0 +1,28 @@
+[project]
+name = "RAG-MEDICAL-CHATBOT-PROJECT"
+version = "0.1"
+description = "RAG Medical Chatbot project"
+authors = [
+  { name="Sachin Hatikankan" }
+]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+"langchain",
+"langchain_community",
+"langchain_huggingface",
+"huggingface_hub",
+"faiss-cpu",
+"pypdf",
+"streamlit",
+"fastAPI",
+"python-dotenv"
+] 
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]
