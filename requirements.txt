@@ -7,3 +7,4 @@ pypdf
 streamlit
 fastAPI
 python-dotenv
+langchain_google_genai
