@@ -14,9 +14,8 @@ dependencies = [
 "huggingface_hub",
 "faiss-cpu",
 "pypdf",
-"streamlit",
-"fastAPI",
-"python-dotenv"
+"python-dotenv",
+"gradio"
 ] 
 
 [build-system]

@@ -1,7 +1,7 @@
-from langchain_community.embeddings import HuggingFaceEmbeddings
-from common.custom_exception import CustomException
-from common.logger import get_logger
-from config.config import Config
+from langchain_huggingface import HuggingFaceEmbeddings
+from app.common.custom_exception import CustomException
+from app.common.logger import get_logger
+from app.config.config import Config
 
 logger = get_logger(__name__)
 
@@ -18,6 +18,7 @@ def embedding():
     except Exception as e:
         error_message = CustomException("Failed while embedding",e)
         logger.error(str(error_message))
+        raise error_message
 
 
 

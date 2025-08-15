@@ -1,2 +1,16 @@
 .env
 RAG_MEDICAL_CHATBOT_PROJECT.egg-info
+logs
+app\main.py
+app\backend\api.py
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+vectorstore/
+data/
+*.log
+.vscode/
+.idea/
+.DS_Store

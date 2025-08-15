@@ -22,7 +22,7 @@ def run_backend():
 def run_frontend():
     try:
         logger.info("Starting frontend...")
-        subprocess.run(["streamlit","run","app/frontend/ui.py"],check=True)
+        subprocess.run(["gradio","app/frontend/ui.py"],check=True)
         # Subprocess runs the frontend process
     except CustomException as e:
         logger.error("Error in backend")
@@ -39,3 +39,5 @@ if __name__ == "__main__":
     except CustomException as e:
         logger.error("Error while processing your request")
         raise Exception (str(CustomException("Failed to process your requests",details=e)))
+    
+    

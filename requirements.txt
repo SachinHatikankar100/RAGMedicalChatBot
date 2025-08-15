@@ -4,7 +4,7 @@ langchain_huggingface
 huggingface_hub
 faiss-cpu
 pypdf
-streamlit
-fastAPI
 python-dotenv
 langchain_google_genai
+gradio
+langchain_text_splitters

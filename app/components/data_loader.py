@@ -1,7 +1,7 @@
-from pdf_loader import load_pdf, create_text_chunks
-from components.vector_store import save_vector_store
-from common.custom_exception import CustomException
-from common.logger import get_logger
+from app.components.pdf_loader import load_pdf, create_text_chunks
+from app.components.vector_store import save_vector_store
+from app.common.custom_exception import CustomException
+from app.common.logger import get_logger
 
 logger = get_logger(__name__)
 
@@ -17,6 +17,3 @@ def load_and_process_documents():
         error_message = CustomException("Failed while loading and processing documents",e)
         logger.error(str(error_message))
 
-
-if __name__ =="__main__":
-    load_and_process_documents()
